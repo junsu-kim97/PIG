@@ -1,0 +1,8 @@
+gym==0.18.0
+tensorboardX
+tqdm
+opencv-python
+matplotlib
+seaborn
+sklearn
+mujoco_py==2.1.2.14

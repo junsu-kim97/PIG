@@ -1,0 +1,4 @@
+*.pyc
+runs*
+.idea
+*.ipynb
