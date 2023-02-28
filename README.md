@@ -34,11 +34,11 @@ source ./scripts/train_antmaze.sh AntMazeP v1 {GPU} {SEED}  # Pi-shape
 ```
 ### Pusher
 ```
-
+source ./scripts/train_pusher.sh {GPU} {SEED}
 ```
 ### Reacher
 ```
-
+source ./scripts/train_reacher.sh {GPU} {SEED}
 ```
 
 If you find this code useful, please reference in our paper:
