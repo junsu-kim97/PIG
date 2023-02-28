@@ -43,8 +43,7 @@ source ./scripts/train_reacher.sh {GPU} {SEED}
 
 If you find this code useful, please reference in our paper:
 ```bibtex
-@inproceedings{
-  kim2023imitating,
+@inproceedings{kim2023imitating,
   title={Imitating Graph-Based Planning with Goal-Conditioned Policies},
   author={Junsu Kim and Younggyo Seo and Sungsoo Ahn and Kyunghwan Son and Jinwoo Shin},
   booktitle={International Conference on Learning Representations},
