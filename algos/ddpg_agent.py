@@ -375,11 +375,11 @@ class ddpg_agent:
                 actions_g = actions_g.unsqueeze(dim=1).repeat(
                     1, self.args.plan_budget, 1
                 )
-                goal_loss = (actions_g - actions_sg) ** 2
+            goal_loss = (actions_g - actions_sg) ** 2
 
-                goal_loss *= path_mask
-                goal_loss = torch.sum(goal_loss) / torch.sum(path_mask)
-                actor_loss += goal_loss * self.args.lambda_goal_loss
+            goal_loss *= path_mask
+            goal_loss = torch.sum(goal_loss) / torch.sum(path_mask)
+            actor_loss += goal_loss * self.args.lambda_goal_loss
 
         self.actor_optim.zero_grad()
         actor_loss.backward()
